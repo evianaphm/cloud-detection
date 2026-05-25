@@ -1,0 +1,37 @@
+We have all agreed on these attributions:
+
+Sharazad Ali worked on:
+- Wrote the Introduction, Conclusion, and Sections 2 to 3.2 of the report
+- Performed all data cleaning and produced all EDA visualizations, including spatial label maps, feature distributions, and correlation matrix
+- Designed and justified the image-level train/validation/test split
+- Conducted feature importance analysis using ANOVA F-score, mutual information, and log. reg. coefficients to identify top features.
+- Engineered 20 patch-based spatial features per pixel using vectorized 5x5 neighborhood statistics
+- Validated modeling results and contributed to post-hoc EDA interpretation
+- Developed the repository README for pipeline documentation and reproducibility
+
+Mark Szekacs worked on:
+- Initial CNN autoencoder architecture design and implementation (replacing MLP baseline with convolutional encoder-decoder)
+- Training pipeline on Bridges: experimentation and pre-training initial architecture on 5 images
+- Embedding extraction for the initial autoencoder architecture
+- Latent space analysis: dimension selection sweep, PCA and t-SNE and their visualizations
+- Updating vizualizations according to the final autoencoder structure
+- Transfer Learning section of the report (Section 3.3)
+
+Eviana Pham worked on:
+- Rebuilt and implemented the autoencoder pipeline, including pretraining, fine-tuning and embedding extraction.
+- Prepared data for modeling by merging learned embeddings with previously defined train, validation, and test sets.
+- Built the full modeling pipeline for the final analysis.
+- Tuned and evaluated Logistic Regression, Random Forest, Gradient Boosting and QDA using validation metrics.
+- Selected final model (RF) and conducted post-hoc analysis.
+- Conducted model diagnostics and created supporting visualizations.
+- Wrote the Modeling section of the report (Sections 4.1 to 4.4).
+- Contributed to README updates for pipeline documentation and reproducibility.
+
+Ziyu Ge worked on:
+- Implemented and compared Logistic Regression, Random Forest, and Gradient Boosting using combined feature sets.
+- Built the modeling pipeline, including preprocessing, training, validation, and testing.
+- Evaluation metrics and visualizations (ROC curve, confusion matrix).
+- Stability analysis using noise perturbation, bootstrap, and prediction consistency.
+- Unlabeled sanity checks using prediction distributions and spatial visualizations.
+- Wrote Stability Analysis and Unlabeled Sanity section of the report (Section 4.5).
+
