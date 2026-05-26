@@ -1,9 +1,6 @@
-# STAT 214 Lab 2 — Cloud Detection in Polar Regions
-**Spring 2025**
+# Cloud Detection in Polar Regions
 
 ## Overview
-
-This repository contains all code, figures, and report materials for Lab 2 of STAT 214.
 The goal is to build a cloud detection classifier for MISR polar satellite imagery using
 radiance data from 164 images, 3 of which carry expert labels.
 
@@ -17,7 +14,7 @@ The pipeline proceeds in three parts:
 ## Repository Structure
 
 ```
-stat-214-lab2/
+cloud-detection/
 │
 ├── code/                         # All scripts for the full pipeline
 │   ├── eda.py                    # Part 1: data cleaning, EDA, train/val/test split
@@ -82,19 +79,13 @@ stat-214-lab2/
 
 ## Setup
 
-**1. Clone the repo**
-```bash
-git clone git@github.com:sharyali05/stat-214-lab2.git
-cd stat-214-lab2
-```
-
-**2. Create the conda environment**
+**1. Create the conda environment**
 ```bash
 conda env create -f code/environment.yaml
 conda activate env_214
 ```
 
-**3. Download the data**
+**2. Download the data**
 
 Download `image_data.zip` from bCourses under Files > Labs > lab2 and unzip into `data/`:
 ```bash
